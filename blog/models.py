@@ -7,7 +7,6 @@ class Post (models.Model):
     text = models.TextField()
     data = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField (blank=True, null=True)
-    image = models.ImageField(upload_to=None, height_field=None, width_field=None, max_length=100)
 
 
     def publish(self):
